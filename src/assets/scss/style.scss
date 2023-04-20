@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Poppins"),
+    url(../fonts/Poppins-Regular.otf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: local("Poppins"), url(../fonts/Poppins-Bold.otf) format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: local("Poppins"),
+    url(../fonts/Poppins-Light.otf) format("truetype");
+}
+
+html {
+  font-family: "Poppins-Regular", Roboto, sans-serif !important;
+  text-rendering: optimizeLegibility !important;
+}
+
+.mdi {
+  cursor: pointer;
+}
+
+.v-list-item-title {
+  font-family: "Poppins-Regular", Roboto, sans-serif !important;
+}
+/* navigation bar on hover */
+.navigation-bar {
+  overflow: none !important;
+}
+.navigation-bar:hover {
+  width: 21% !important;
+}
+
+/*start ali */
+// .v-field__field {
+//   padding-bottom: 0 !important;
+// }
+// .v-field__field,
+// .v-field__prepend-inner,
+// .v-field__append-inner,
+// .v-field__clearable {
+//   padding-top: 0 !important;
+// }
+
+// input,
+// select {
+//   padding: 0 !important;
+// }
+// .v-field--focused input {
+//   padding-top: 7px !important;
+// }
+
+/*end ali */
+.v-sheet.v-theme--dark {
+  background-color: transparent !important;
+}
+.v-navigation-drawer__content {
+  width: fit-content;
+}
+
+.v-btn__content{
+  font-size: 1rem;
+}
+
+.right-form-visible {
+  -webkit-animation: fadeIn 0.2s ease-in-out forwards;
+  -moz-animation: fadeIn 0.2s ease-in-out forwards;
+  -o-animation: fadeIn 0.2s ease-in-out forwards;
+  animation: fadeIn 0.2s ease-in-out forwards;
+}
+.right-form-not-visible {
+  -webkit-animation: fadeOut 0.2s ease-in-out forwards;
+  -moz-animation: fadeOut 0.2s ease-in-out forwards;
+  -o-animation: fadeOut 0.2s ease-in-out forwards;
+  animation: fadeOut 0.2s ease-in-out forwards;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@keyframes fadeIn {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(500px);
+  }
+}
+@keyframes fadeOut {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(500px);
+  }
+}
+
+.form-not-visible {
+  // padding-right: 1% !important;
+  transition-property: padding-right;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.2, 0, 0.1, 0.5);
+  will-change: padding-right;
+  z-index: 1;
+  position: relative;
+}
+
+.form-visible {
+  position: relative !important;
+  // padding-right: 40% !important;
+  min-width: 100% !important;
+  overflow-x: auto !important;
+  min-height: 300px !important;
+  transition-property: padding-right;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.2, 0, 0.1, 0.5);
+  will-change: padding-right;
+}
+
+input,
+select {
+  display: block;
+  // padding: 10px 6px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 5px solid black;
+  color: rgb(0, 0, 0);
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+  width: 16px;
+  margin: 0 10px 0 0;
+  position: relative;
+  top: 2px;
+}
+
+.v-theme--light .v-field {
+  border-radius: 0.7rem !important;
+}
+
+.v-theme--dark .v-field {
+  border-radius: 0.7rem !important;
+}
+
+.v-progress-circular {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.v-container{
+  max-width:inherit !important;
+}
+
+.btn_add:hover .mdi {
+  transform: rotate(180deg);
+  transition: ease 0.5s all;
+}
+.btn_add .mdi {
+  transform: rotate(90deg);
+  transition: ease 0.5s all;
+}
+.btn_add{
+    background-color: #212121 !important;
+    color: white !important;
+    float: right;
+    margin-left: 0.9rem;
+}
+.tree-row-item:hover {
+  font-weight: 600;
+}
+
+.v-list-group__items .v-list-item {
+  padding-inline-start: calc(35px) !important;
+}
+
+.v-chip{
+  margin-top:  4px !important;
+  margin-bottom:  4px !important;
+} 
+
+.v-messages__message {
+  color: red;
+}
+.delete-dialog{
+  width: 40% !important;
+}
+.stand-by-login-dialog{
+  width: 20% !important;
+}
+.delete-dialog .v-toolbar__content {
+  padding-left: 10px;
+}
+
+.text-h5{
+  margin-bottom: 0.7rem;
+  display: block;
+}
